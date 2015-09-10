@@ -4,7 +4,8 @@
   "description": "Widget Skeleton ( To build an Example )",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"babel src -d dist",
+    "test": "mocha"
   },
   "keywords": [
     "Widget"
