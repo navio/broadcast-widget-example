@@ -6,7 +6,8 @@
   "scripts": {
     "start": "babel src -d dist",
     "watch": "babel src -w -d dist",
-    "test": "mocha"
+    "test": "mocha",
+    "cast": "node dist/runner"
   },
   "keywords": [
     "Widget"
