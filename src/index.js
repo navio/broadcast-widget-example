@@ -1,18 +1,17 @@
-import Widget from "./Widget";
+import Bootstrap from "./lib/Bootstrap";
+/*
 
-class Bootstrap{
-    constructor(broadcast){
-       this.widget = new Widget("widget-skeleton",broadcast,main);
-       this.widget.subscribeWidget();
-    }
-    getMainWidget(){
-      return this.widget;
-    }
+Feel free to Extend Bootstrap with new elements.
+
+*/
+class WidgetBootstrap extends Bootstrap{
+  handler(message){
+        console.log("Widget listened: --->"+message);
+
+
+
+
+  }
 }
 
-function main(message){
-      console.log("Widget listened:"+message);
-
-};
-
-export default Bootstrap;
+export default WidgetBootstrap;

@@ -1,6 +1,6 @@
 var Dispatcher = require("broadcastjs")["default"];
 var assert = require("assert");
-var Widget = require("../dist/Widget");
+var Widget = require("../dist/lib/Widget");
 var Bootstrap = require("../dist");
 
 describe("Widget Skeleton",function(){
