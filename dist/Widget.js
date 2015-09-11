@@ -25,10 +25,14 @@ var WidgetController = (function (_Widget) {
   }
 
   _createClass(WidgetController, [{
-    key: "callbackProvider",
-    value: function callbackProvider(Fn) {
-      var that = this;
-      return Fn;
+    key: "_setState",
+    value: function _setState(message) {
+      this.currentState = message;
+    }
+  }, {
+    key: "handler",
+    value: function handler(message) {
+      return this.tools(message);
     }
   }]);
 

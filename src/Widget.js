@@ -6,9 +6,13 @@ class WidgetController extends Widget{
     super(name,dispatcher);
     this.tools = widgetTools;
   }
-  callbackProvider(Fn){
-     let that = this;
-     return Fn;
+
+  _setState(message){
+    this.currentState = message;
+  }
+
+  handler(message){
+     return this.tools(message);
   }
 
 }
