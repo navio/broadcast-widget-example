@@ -18,7 +18,7 @@ var Bootstrap = (function () {
    function Bootstrap(broadcast) {
       _classCallCheck(this, Bootstrap);
 
-      this.widget = new _Widget2["default"]("widget-skeleton", broadcast, respond);
+      this.widget = new _Widget2["default"]("widget-skeleton", broadcast, main);
       this.widget.subscribeWidget();
    }
 
@@ -32,7 +32,7 @@ var Bootstrap = (function () {
    return Bootstrap;
 })();
 
-function respond(message) {
+function main(message) {
    console.log("Widget listened:" + message);
 };
 
