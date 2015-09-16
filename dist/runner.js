@@ -20,13 +20,13 @@ var Runner = function Runner(amount) {
   var counter = 0;
   var play = function play() {
     counter++;
-    if (counter > amount) clearInterval(interval);
+    if (counter >= amount) clearInterval(interval);
     dispatch.pushMessage(counter);
   };
 
   var interval = setInterval(function () {
     play();
-  }, 1000);
+  }, 10);
 };
 
-var run = new Runner(10);
+var run = new Runner(50);

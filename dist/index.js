@@ -14,14 +14,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var _handlers = require("./handlers");
+
+var _handlers2 = _interopRequireDefault(_handlers);
+
 var _libBootstrap = require("./lib/Bootstrap");
 
 var _libBootstrap2 = _interopRequireDefault(_libBootstrap);
 
 /*
-
 Feel free to Extend Bootstrap with new elements.
-
 */
 
 var WidgetBootstrap = (function (_Bootstrap) {
@@ -36,7 +38,11 @@ var WidgetBootstrap = (function (_Bootstrap) {
   _createClass(WidgetBootstrap, [{
     key: "handler",
     value: function handler(message) {
-      console.log("Widget listened: --->" + message);
+      // super.handler(message);
+
+      if (_handlers2["default"].hasOwnProperty(message)) {
+        _handlers2["default"][message]();
+      }
     }
   }]);
 

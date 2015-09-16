@@ -8,14 +8,14 @@ class Runner{
     let boot = new Bootstrap(dispatch);
     let counter = 0;
     let play = function(){
-                    counter++;
-                    if(counter > amount) clearInterval(interval);
-                    dispatch.pushMessage(counter);
+                  counter++;
+                  if(counter >= amount) clearInterval(interval);
+                  dispatch.pushMessage(counter);
                };
 
-    let interval = setInterval(function(){ play() },1000);
+    let interval = setInterval(function(){ play() }, 10);
   }
 
 }
 
-let run = new Runner(10);
+let run = new Runner(50);
