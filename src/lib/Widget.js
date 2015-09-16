@@ -2,7 +2,7 @@ import {Widget} from "broadcastjs";
 
 class WidgetController extends Widget{
 
-  constructor(name,dispatcher,widgetTools){
+  constructor(name,dispatcher,widgetTools) {
     super(name,dispatcher);
     this.tools = widgetTools;
   }
@@ -12,7 +12,7 @@ class WidgetController extends Widget{
   }
 
   handler(message){
-     return this.tools(message);
+   return this.tools(message);
   }
 
 }
