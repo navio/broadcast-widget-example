@@ -2,7 +2,7 @@
   "name": "widget-skeleton",
   "version": "1.0.0",
   "description": "Widget Skeleton ( To build an Example )",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "babel src -d dist",
     "watch": "babel src -w -d dist",
