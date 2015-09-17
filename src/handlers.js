@@ -2,15 +2,15 @@
   Handlers based on timestamps
 */
 const Handlers = {
-  "10": function() {
+  "10.00": function() {
     console.log("Ten!");
   },
 
-  "20": function() {
+  "20.00": function() {
     console.log("Twenty!");
   },
 
-  "30": function() {
+  "30.00": function() {
     console.log("Thirty!");
   }
 };

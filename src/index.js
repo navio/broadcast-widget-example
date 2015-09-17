@@ -5,8 +5,8 @@ Feel free to Extend Bootstrap with new elements.
 */
 class WidgetBootstrap extends Bootstrap {
   handler(message){
-    // super.handler(message);
-    //console.log(message);
+    super.handler(message);
+
     if (Handlers.hasOwnProperty(message)) {
       Handlers[message]();
     }
