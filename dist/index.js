@@ -39,7 +39,7 @@ var WidgetBootstrap = (function (_Bootstrap) {
     key: "handler",
     value: function handler(message) {
       // super.handler(message);
-
+      //console.log(message);
       if (_handlers2["default"].hasOwnProperty(message)) {
         _handlers2["default"][message]();
       }
