@@ -38,8 +38,8 @@ var WidgetBootstrap = (function (_Bootstrap) {
   _createClass(WidgetBootstrap, [{
     key: "handler",
     value: function handler(message) {
-      // super.handler(message);
-      //console.log(message);
+      _get(Object.getPrototypeOf(WidgetBootstrap.prototype), "handler", this).call(this, message);
+
       if (_handlers2["default"].hasOwnProperty(message)) {
         _handlers2["default"][message]();
       }
